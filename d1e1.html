@@ -2,35 +2,91 @@
 <html>
 <head>
 	<title>Remi page</title>
+	<link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
-	<h1>Login</h1>
-	<form>
-		<div>
-			<label for="username">Username</label>
-			<input type="text" name="text"/>
-		</div>
-		<div>
-			<label for="password">Password</label>
-			<input type="password" name="name"/>
-		</div>
-		<div>
-			<label for="checkbox">Remember me</label>
-       		<input type="checkbox" name="checkbox">
-		</div>
-		
-		<div>
-			<input type="submit" value="Login"/>
-		</div>
-	</form>
-
-	<article>
-		<div id="article">
+	
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
 			<h1>News of the day</h1>
-			<h3>Nicolas cage on muffin, in space!</h3>
 		</div>
+	<div class="col-sm-4 col-sm-push-8">
+	<h1>Login</h1>
+		
+		<form class="text-uppercase">
+			<div>
+				<label for="username">Username</label>
+				<input type="text" name="text"/>
+			</div>
+		
+			<div>
+				<label for="password">Password</label>
+				<input type="password" name="name"/>
+			</div>
+			
+			<div>
+				<label for="checkbox">Remember me</label>
+       			<input type="checkbox" name="checkbox">
+			</div>
+		
+			<div>
+				<input type="submit" value="Login"/>
+			</div>
+		</form>
+	</div>
 
 
-	</article>
+		<div class="col-sm-8 col-sm-pull-4">
+			<article class="col">
+				<h3>Nicolas cage on muffin, in space!</h3>
+
+				<p class="lead text-justify">Preheat oven to Gas Mark 6 or a medium temperature. Line muffin tray with paper muffin cases.
+				Beat the eggs in a mixing bowl and then mix in the oil and milk. Add the sugar and whisk until dissolved.
+				Sift in the dry ingrediants: flour, baking powder and salt and mix until smooth. NB: add any extra ingrediants now eg. chocolate chips/fruit</p>
+
+				<p>Fill muffin cases TWO THIRDS full (this is important for the perfect size muffins) and bake in the middle of the oven for 25 minutes (approx. depending on your oven)
+				Leave to cool (or enjoy warm!</p>
+
+				<img src="http://imgdonkey.com/big/dGdMWkRSag/nicolas-cage-is-a-cupcake-in-space-not-much-else-can-be-said-about-this.gif">
+		
+		
+				<ul class="list-unstyled">
+					<li>this is</li>
+					<li>the required</li>
+					<li>list just</li>
+					<li>for no reason</li>
+				</ul>
+
+		<div>
+			<form>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="text" name="email" id="comment"/>
+				</div>
+				<div>
+					<textarea name="message" cols="40" rows="6">
+					</textarea>
+					<input type="submit" value="add comment" >
+				</div>
+			</form>
+		</div>
+		</article>
+	</div>
+	
+	
+	
+
+	</div>
+</div>
+
+
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.js"></script>
 </body>
 </html>
+
